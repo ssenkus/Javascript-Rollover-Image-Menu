@@ -1,63 +1,121 @@
 <html>
-	<head>
-	<style type="text/css">
-	.home-menu {
-		background-image: URL(pm00_p.png);
-				width:350px;
-		height:240px;
-		color:#000;
-		margin:100px 0px 10px 100px;
-		float:left;
-	}
-	.home-menu img {
-			width:350px;
-		height:240px;
-	}
-	ul {
-		width: 50px;
-		margin:100px 0px 10px 0px;
-		padding: 0;
-		list-style-type: none;
-	}
-	.menu {
-		margin-bottom:0;
-		width:210px;
-		height:30px;
-	}
-	
-	</style>
-	
-	<script type="text/javascript">
-		function changeimage(mainMenuImageNumber, mainMenuMenuBarNumber) {
-			var mainMenuImageId="home-menu";
-			var mainMenuMenuBarId = "js_menu0" + mainMenuMenuBarNumber;
-			document.getElementById(mainMenuImageId).style.backgroundImage="URL('pm0"+mainMenuImageNumber+"_p.png')";
-			document.getElementById(mainMenuMenuBarId).src="pm0"+mainMenuMenuBarNumber+"_m_hover.png";
-		}
+    <head>
+        <style type="text/css">
+            body {
+                text-align: center;
+                background-color: #000;
+            }
 
-		function changeimageback(mainMenuImageNumber, mainMenuMenuBarNumber) {
-			var mainMenuImageId="home-menu";
-			var mainMenuMenuBarId = "js_menu0" + mainMenuMenuBarNumber;
-			document.getElementById(mainMenuImageId).style.backgroundImage="URL('pm0"+mainMenuImageNumber+"_p.png')";
-			document.getElementById(mainMenuMenuBarId).src="pm0"+mainMenuMenuBarNumber+"_m.png";
-		}
-	</script>
-	</head>
+            #menu-wrapper {
+                margin: 100px auto;
+                border: 2px solid #fff;
+                width: 560px;
+                text-align: center;
+                height: 240px;
 
-<body>
-	<div id="home-menu" class="home-menu"><a href="#"></a></div>
-	<div style="float:left; margin:0px;"><ul>
-		<a href=""><img src="pm01_m.png" class="menu" id="js_menu01" onMouseOver="changeimage(1, 1);" onMouseOut="changeimageback(0, 1)" /></a>
-		<a href=""><img src="pm02_m.png" class="menu" id="js_menu02" onMouseOver="changeimage(2, 2);" onMouseOut="changeimageback(0, 2)" /></a>
-		<a href=""><img src="pm03_m.png" class="menu" id="js_menu03" onMouseOver="changeimage(3, 3);" onMouseOut="changeimageback(0, 3)" /></a>
-		<a href=""><img src="pm04_m.png" class="menu" id="js_menu04" onMouseOver="changeimage(4, 4);" onMouseOut="changeimageback(0, 4)" /></a>
-		<a href=""><img src="pm05_m.png" class="menu" id="js_menu05" onMouseOver="changeimage(5, 5);" onMouseOut="changeimageback(0, 5)" /></a>
-		<a href=""><img src="pm06_m.png" class="menu" id="js_menu06" onMouseOver="changeimage(6, 6);" onMouseOut="changeimageback(0, 6)" /></a>
-		<a href=""><img src="pm07_m.png" class="menu" id="js_menu07" onMouseOver="changeimage(7, 7);" onMouseOut="changeimageback(0, 7)" /></a>
-		<a href=""><img src="pm08_m.png" class="menu" id="js_menu08" onMouseOver="changeimage(8, 8);" onMouseOut="changeimageback(0, 8)" /></a>
-	</ul>
-	</div>
-</body>
+            }
+
+            #display {
+                background-image: URL('img/pm00_p.png');
+                width:350px;
+                height:240px;
+                color:#000;
+                margin: 0;
+                float:left;
+            }
+            ul {
+                height: 240px;
+                width: 210px;
+                margin:0;
+                padding: 0;
+                list-style-type: none;
+                float: left;
+            }
+            li {
+                margin: 0;
+                width: 210px;
+                height: 30px;
+            }
+            li img {
+                margin:0;
+                width:inherit;
+                height:inherit;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="menu-wrapper">
+            <div id="display"></div>
+            <ul>
+                <li class="menu-item"><img src="img/pm01_m.png" /></li>
+                <li class="menu-item"><img src="img/pm02_m.png" /></li>
+                <li class="menu-item"><img src="img/pm03_m.png" /></li>
+                <li class="menu-item"><img src="img/pm04_m.png" /></li>
+                <li class="menu-item"><img src="img/pm05_m.png" /></li>
+                <li class="menu-item"><img src="img/pm06_m.png" /></li>
+                <li class="menu-item"><img src="img/pm07_m.png" /></li>
+                <li class="menu-item"><img src="img/pm08_m.png" /></li>
+            </ul>
+
+        </div>
+
+        <div style="display:none">
+            <img src="img/pm01_p.png" />
+            <img src="img/pm02_p.png" />
+            <img src="img/pm03_p.png" />
+            <img src="img/pm04_p.png" />
+            <img src="img/pm05_p.png" />
+            <img src="img/pm06_p.png" />
+            <img src="img/pm07_p.png" />
+            <img src="img/pm08_p.png" />
+
+            <img src="img/pm01_m_hover.png" />
+            <img src="img/pm02_m_hover.png" />
+            <img src="img/pm03_m_hover.png" />
+            <img src="img/pm04_m_hover.png" />
+            <img src="img/pm05_m_hover.png" />
+            <img src="img/pm06_m_hover.png" />
+            <img src="img/pm07_m_hover.png" />
+            <img src="img/pm08_m_hover.png" />                
+
+            <img src="img/pm01_p.png" />
+            <img src="img/pm02_p.png" />
+            <img src="img/pm03_p.png" />
+            <img src="img/pm04_p.png" />
+            <img src="img/pm05_p.png" />
+            <img src="img/pm06_p.png" />
+            <img src="img/pm07_p.png" />
+            <img src="img/pm08_p.png" />                
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.menu-item').hover(function() {
+                    // convoluted just to see if I could do it...
+                    var $target = $(this).find('img');
+                    var src = $target.attr('src');
+                    var path = src.split('/');
+                    var fn = path[1].split('.');
+                    $target.attr('src', [path[0], '/', fn[0], '_hover', '.', fn[1]].join(''));
+                    $('#display').css('background-image', 'url(img/pm0' + ($(this).index() + 1) + '_p.png)');
+                }, function() {
+                    // streamlined...
+                    $(this).find('img').attr('src', 'img/pm0' + ($(this).index() + 1) + '_m.png');
+                });
+
+                // reset image back to default
+                $('#menu-wrapper').mouseleave(function() {
+                    $('#display').css('background-image', 'url(img/pm00_p.png)');
+                });
+
+            });
+
+        </script>
+    </body>
 
 </html>
 
